@@ -1,0 +1,11 @@
+stages:
+  data:
+    cmd: python data.py
+    deps:
+    - data.py
+    params:
+    - inputs.Storage_path
+    - inputs.clou_cover
+    - inputs.date_range
+    - inputs.long_lat
+    - inputs.radius

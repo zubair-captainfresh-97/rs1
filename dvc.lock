@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  data:
+    cmd: python data.py
+    deps:
+    - path: data.py
+      md5: d988c972b5a9f558e2aba2c981096b71
+      size: 1941
+    params:
+      params.yaml:
+        inputs.Storage_path: /Users/zubair/Downloads/dvc2/rs1/images/
+        inputs.clou_cover: eo:cloud_cover<=10
+        inputs.date_range: 2022-04-01/2022-09-01
+        inputs.long_lat:
+        - 82.12493
+        - 16.53084
+        inputs.radius: 1500
